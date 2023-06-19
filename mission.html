@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio Chevrier</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Portfolio</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="single.html">Présentation</a></li>
+								<li><a href="contexte.html">Contexte Entreprise</a></li>
+								<li><a href="mission.html">Mission et projets</a></li>
+								<li><a href="#">En cours</a></li>
+								<li><a href="#">En cours</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Rechercher</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+						<section>
+							<ul class="links">
+								<li>
+									<a href="single.html">
+										<h3>Présentation du candidat</h3>
+										<p>Présentation personnelle et professionnelle du candidat</p>
+									</a>
+								</li>
+								<li>
+									<a href="contexte.html">
+										<h3>Contexte entreprise</h3>
+										<p>Contexte de stage à Schneider Electric</p>
+									</a>
+								</li>
+								<li>
+									<a href="mission.html">
+										<h3>Mission et projets</h3>
+										<p>Projets et missions réalisés durant le stage</p>
+									</a>
+								</li>
+							</ul>
+						</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Missions et projets</a></h2>
+										<p>Récapitulatif des misions et projets effectués durant le stage</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2023-06-18">18 Juin, 2023</time>
+										<a href="#" class="author"><span class="name">Jordan Chevrier</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="images/" alt="" /></span>
+								<p>Ceci est un récapitulatif principalement en image des projets et missions réalisés tout au long de ce stage !</p>
+								<span class="image featured"><img src="images/ipt.jpg" alt="" /></span>
+								<p>Tout d'abord mon stage consiste à faire une migration du code de l'IPT ci dessus. Actuellement le code était sur de l'assembleur donc un vieux
+								language qui n'est casiment plus utilisé de nos jour. Ma mission principale est de migré ce code assembleur en C, pour ceci j'ai à disposition différentes
+								cartes de test ou je m'éxerce et je fait en très grosse partie le code que je n'aurais plus qu'a injecté et adapter légèrement suivant la configuration du produit.
+								Voici maintenant en image différentes étapes pour ma mission, Étape n°1 : </p>
+								<span class="image featured"><img src="images/etape1.png" alt="" /></span>
+								<p>Sur l'image ci dessus on fait simplement clignoter une led à une fréquence définie (Le délais est en millisecondes)</p>
+								<p>Étape n°2 :</p>
+								<span class="image featured"><img src="images/etape2.png" alt="" /></span>
+								<p>Sur l'étape 2 on a plusieurs choses en même temps, géstion de la LED avec un bouton poussoir qui nous permet de changer la vitesse de clignotement de celle-ci.</p>
+								<p>Étape n°3 :</p>
+								<span class="image featured"><img src="images/etape3.png" alt="" /></span>
+								<p>Sur cette etape on a toujours la gestion de la led avec le bouton seulement avec quelque possibilité en plus, on peut maintenant en restant appuyer 2 secondes sur le bouton
+								faire en sorte que la LED reste fixe, puis si on rappuie on repasse en changement de mode</p>
+								<p>Étape n°4 : </p>
+								<span class="image featured"><img src="images/etape4.png" alt="" /></span>
+								<p>Cette étape est gigantesque je l'ai donc mise en plusieurs partie, ici on retrouve les fonctions ainsi que déclarations de variables !</p>
+								<span class="image featured"><img src="images/etape4-2.png" alt="" /></span>
+								<p>Ici on a plusieurs chose encore une fois, on récupère les valeurs de l'ADC(Analogic Digital Converter) pour pouvoir mesuré la température du capteur interne de la carte stm32.
+								Puis on éffectue le calcul de la température en fonction des constante et valeurs récupérée au préalable. Une fois ceci fait, on établi des seuil de température qui déclenche la LED si ils sont depassé pendant un certain temps.
+								Puis on fait une moyenne de température sur les 10 dernière minutes et on l'affiche dans la console.</p>
+								<span class="image featured"><img src="images/etape4-3.png" alt="" /></span>
+								<p>Enfin on fait une moyenne circulaire ou glissante sur les 10 derniers échantillons de température. On convertis toute ces valeurs et on affiche enfin la température, l'état de la led ainsi que la moyenne circulaire.</p>
+								<p>Pour finir l'étape n°5 : </p>
+								<span class="image featured"><img src="images/etape5.png" alt="" /></span>
+								<p>Enfin on à crée un tableau de valeur pour crée un sinus demi alternance positif au dessus puis on utilise un timer ainsi que le DAC(Digital Analogic Converter) Pour générer un signal sinus demi alternance positif.</p>
+								<p>Pour cette partie on branche deux cartes ensemble pour que l'une génère et l'autre "décrypte" le signal, j'ai donc fait un branchement entre les deux cartes en raccordant les deux masses ensembles ainsi que les pins d'envoi et de réceptions apropriés.</p>
+								<span class="image featured"><img src="images/etape5-2.jpeg" alt="" /></span>
+								<p>C'est tout pour le moment pour ce projet, sachant que je suis à la dernière étape souhaité avant de migré le code sur le vrai produit.</p>
+								<p>Merci d'avoir lu jusqu'ici !</p>
+								<footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">1 302 684</a></li>
+										<li><a href="#" class="icon solid fa-comment">02</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="jordanchvr@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: Jordan Chevrier.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
